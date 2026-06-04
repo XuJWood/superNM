@@ -52,26 +52,14 @@ my-project/
 ├── CLAUDE.md                       # 开发基线（每次会话自动加载）
 ├── ROADMAP.md                      # 分阶段开发计划
 ├── devlog.md                       # 开发日志（每次会话追加）
-├── pyproject.toml                  # Python 依赖管理
+├── pyproject.toml                  # 项目依赖管理（取决于技术栈）
 ├── .gitignore
 ├── .claude/
 │   └── settings.json               # Claude Code 项目配置
-├── config/
-│   ├── nodes.yaml                  # 节点注册（YAML 驱动）
-│   └── tools.yaml                  # 工具注册
-├── my_project/                     # Python 包
-│   ├── server.py                   # FastAPI 主入口
-│   ├── engine.py                   # LangGraph 引擎
-│   ├── session.py                  # 会话管理器
-│   ├── registry.py                 # 插件注册表
-│   ├── nodes/
-│   │   └── base.py                 # BaseNode 基类
-│   ├── tools/
-│   │   └── base.py                 # BaseTool 基类
-│   ├── llm/
-│   │   └── router.py               # LLM 路由
-│   └── storage/
-│       └── obs.py                  # 观测日志
+├── config/                         # 配置文件目录（按需）
+├── src/                            # 源码目录（模块由 ROADMAP 决定）
+│   ├── server.py                   # 主入口
+│   └── ...                         # 具体模块根据产品调研生成
 ├── docs/
 │   ├── Product-Report.md           # 产品技术调研报告
 │   ├── Architecture-and-Dev-Standards.md
@@ -80,11 +68,12 @@ my-project/
 │   ├── _模板.md                    # 周报模板
 │   ├── _日报模板.md                # 日报模板
 │   └── daily/                      # 日报存档
-├── web/                            # 前端页面（配置/观测平台）
+├── web/                            # 前端页面（如有）
 ├── tests/
-├── eval/
 └── scripts/
 ```
+
+> 架构由调研和计划驱动，不预设特定技术栈。Python/FastAPI、Node.js/Express、Go/Gin 均支持。
 
 ---
 
@@ -181,7 +170,7 @@ Claude: 你好！让我们来启动这个新项目。
 
 ## 🧩 技术栈适配
 
-默认模板基于 **Python + FastAPI + LangGraph**（适合 AI Agent 项目），但 Skill 会**根据你的技术偏好动态调整**：
+不带技术偏见。Skill 会**根据你的产品方向和需求推荐最合适的技术方案**：
 
 | 后端 | 前端 | AI 部分 |
 |------|------|---------|
@@ -254,7 +243,3 @@ Claude: 你好！让我们来启动这个新项目。
 ## 📄 License
 
 MIT — 随便用，随便改，随便发给别人。
-
----
-
-**Made with ❤️ by XuJJ** — 一个每天在 Claude Code 里写 AI Agent 的人。
