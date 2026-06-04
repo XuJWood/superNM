@@ -441,3 +441,17 @@ cp -r .claude/skills/supernm /path/to/new-project/.claude/skills/
 ```
 
 或放到用户级 `~/.claude/commands/` 全局可用。
+
+## 长期开发记忆沉淀
+
+### 项目规范来源
+- 分类：`project_workflow`
+- 规则：为已有项目开发时，先读取该项目的 `AGENTS.md` 或 `CLAUDE.md`、`ROADMAP.md`、最新 `devlog.md` 和项目账本；这些文件优先于通用初始化模板。
+- 来源：`/home/xujj/.codex/sessions/2026/06/04/rollout-2026-06-04T16-53-55-019e91d6-d2d0-7c03-9b38-ac8ea0f042b5.jsonl`
+- 置信度：`0.88`
+
+### 完成后维护
+- 分类：`git_workflow`
+- 规则：开发任务完成后必须按项目规范更新维护文档、验证结果和路线图状态，并执行规范化 `git commit`；`git push` 只在用户明确要求或项目规范写明时执行。
+- 来源：`/home/xujj/.codex/sessions/2026/06/04/rollout-2026-06-04T16-53-55-019e91d6-d2d0-7c03-9b38-ac8ea0f042b5.jsonl`
+- 置信度：`0.90`
