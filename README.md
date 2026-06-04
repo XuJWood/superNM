@@ -1,4 +1,4 @@
-# 🚀 Bootstrap — Claude Code 新项目全流程启动 Skill
+# 🚀 SuperNM — Claude Code 新项目全流程启动 Skill
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-blue)](https://claude.ai/code)
@@ -25,7 +25,7 @@
 ## ✨ 核心能力
 
 ```
-你的想法 → /bootstrap → 完整项目工程
+你的想法 → /superNM → 完整项目工程
 ```
 
 ### 9 个阶段，一气呵成
@@ -84,22 +84,22 @@ my-project/
 ```bash
 # 在你的项目根目录
 mkdir -p .claude/skills
-git clone https://github.com/YOUR_USERNAME/claude-bootstrap-skill.git /tmp/bootstrap-skill
-cp -r /tmp/bootstrap-skill/skills/bootstrap .claude/skills/
-rm -rf /tmp/bootstrap-skill
+git clone https://github.com/XuJWood/bootstrap.git /tmp/supernm-skill
+cp -r /tmp/supernm-skill/skills/supernm .claude/skills/
+rm -rf /tmp/supernm-skill
 ```
 
 ### 方式二：用户级全局安装
 
 ```bash
 # 所有项目都能用
-cp -r skills/bootstrap ~/.claude/commands/
+cp -r skills/supernm ~/.claude/commands/
 ```
 
 ### 方式三：从 Claude Code 插件市场安装（即将上线）
 
 ```
-/install-plugin bootstrap
+/install-plugin superNM
 ```
 
 ---
@@ -115,13 +115,13 @@ cd ~/Projects/my-new-product
 然后调用：
 
 ```
-/bootstrap my-awesome-product
+/superNM my-awesome-product
 ```
 
 或者不带参数，进入交互式流程：
 
 ```
-/bootstrap
+/superNM
 ```
 
 **交互示例：**
@@ -157,7 +157,7 @@ Claude: 你好！让我们来启动这个新项目。
 
 ## 🔥 为什么不是简单的脚手架？
 
-| 普通脚手架 | Bootstrap Skill |
+| 普通脚手架 | SuperNM Skill |
 |------------|-----------------|
 | 固定的目录结构 | 根据你的产品定制目录 |
 | 没有技术调研 | 自动做竞品分析 + 技术选型 |
@@ -209,7 +209,7 @@ Claude: 你好！让我们来启动这个新项目。
 | Skill | 用途 |
 |-------|------|
 | `/frontend-design` | 开发前端界面时自动调用，生成高质量 UI 代码 |
-| `/bootstrap:superpowers` | 多 Agent 协作，调研/分析阶段并发加速 |
+| `/superNM:superpowers` | 多 Agent 协作，调研/分析阶段并发加速 |
 
 ---
 
