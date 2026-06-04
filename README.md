@@ -1,4 +1,4 @@
-# 🚀 SuperNM — Claude Code 新项目全流程启动 Skill
+# 🚀 SuperNM
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-blue)](https://claude.ai/code)
