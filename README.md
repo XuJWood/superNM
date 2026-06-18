@@ -14,7 +14,7 @@
 
 <p>
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
-<a href="https://claude.ai/code"><img src="https://img.shields.io/badge/Claude%20Code-Skill-8b5cf6" alt="Claude Code Skill"></a>
+<img src="https://img.shields.io/badge/AI-coding%20skill-8b5cf6" alt="AI coding skill">
 <img src="https://img.shields.io/badge/scaffold-9%20phases-14b8a6" alt="9 phases">
 <img src="https://img.shields.io/badge/stack-agnostic-0ea5e9" alt="stack agnostic">
 <img src="https://img.shields.io/badge/PRs-welcome-22c55e" alt="PRs welcome">
@@ -36,7 +36,7 @@
 
 开新项目最累的从来不是写第一行代码，而是**写代码之前的所有事**：调研竞品、定技术栈、拆开发计划、立项目规范、搭目录、配 Git、还要应付周报日报。
 
-`superNM` 把这一切交给 Claude Code 一次完成 —— 让你的新项目从 **「空目录」→「可立即开发的工程体系」** 只需要 5 分钟。
+`superNM` 把这一切交给你的 AI 编程助手一次完成 —— 让你的新项目从 **「空目录」→「可立即开发的工程体系」** 只需要 5 分钟。
 
 ```
 你的想法  ──▶  /superNM  ──▶  完整项目工程体系
@@ -51,7 +51,7 @@
 | **独立开发者** | 一个人从零搭建 SaaS / 工具产品 | 没人讨论技术方案，从调研到编码全自己扛 |
 | **个人业务线负责人** | 公司里独立负责一条业务线，前后端都要做 | 项目结构、开发规范、日报周报全要从头建 |
 | **小团队技术负责人** | 公司新启项目，需要把规范立起来 | 不想每次开新项目都手动拷旧项目的脚手架 |
-| **AI 编程重度用户** | 用 Claude Code / Cursor / Copilot 写代码 | 希望 AI 记住项目规范，每次会话一致行动 |
+| **AI 编程重度用户** | 用 AI 编程助手写代码（Cursor / Copilot 等） | 希望 AI 记住项目规范，每次会话一致行动 |
 
 ---
 
@@ -66,7 +66,7 @@ cp -r /tmp/supernm/skills/supernm .claude/skills/ && rm -rf /tmp/supernm
 # 2) 进入你的空项目目录
 cd ~/Projects/my-new-product
 
-# 3) 在 Claude Code 会话里调用
+# 3) 在 AI 助手会话里调用
 #    带项目名：
 /superNM my-awesome-product
 #    或不带参数，进入交互式收集：
@@ -77,7 +77,7 @@ cd ~/Projects/my-new-product
 <summary>📺 交互示例（点开看）</summary>
 
 ```
-Claude: 你好！让我们来启动这个新项目，先问你几个问题：
+助手：你好！让我们来启动这个新项目，先问你几个问题：
 
 1. 产品方向 —— 你要做什么产品？（可给描述 / 竞品链接 / 截图）
    > 给宠物医生的 AI 问诊辅助工具
@@ -90,7 +90,7 @@ Claude: 你好！让我们来启动这个新项目，先问你几个问题：
 5. 需要前端界面吗？
    > 需要，医生后台 + 主人端页面
 
-[Claude 开始 WebSearch 调研竞品、生成调研报告、拆 ROADMAP、搭骨架...]
+[助手开始 WebSearch 调研竞品、生成调研报告、拆 ROADMAP、搭骨架...]
 ```
 
 </details>
@@ -119,7 +119,7 @@ my-project/
 ├── ROADMAP.md                      # 分阶段开发计划
 ├── devlog.md                       # 开发日志（每次会话追加）
 ├── .gitignore
-├── .claude/settings.json           # Claude Code 项目配置
+├── .claude/settings.json           # 项目级配置
 ├── src/                            # 源码（目录由 ROADMAP 决定，语言由选型决定）
 │   └── ...                         # 入口与模块根据产品调研生成
 ├── config/                         # 配置文件（按需）
@@ -175,7 +175,7 @@ my-project/
 | **日报** | 每天最后一次会话结束 | `reports/daily/2026-06-04.md` |
 | **周报** | 每周日 18:00 后 / 周一开工前 | `reports/week-03-0608.md` |
 
-**会话自动检查** —— 每次新会话启动时，Claude Code 会先：① 检查昨天是否缺日报 → 提示补上；② 检查上周是否缺周报 → 提示生成；③ 然后才开始今天的开发。
+**会话自动检查** —— 每次新会话启动时，AI 助手会先：① 检查昨天是否缺日报 → 提示补上；② 检查上周是否缺周报 → 提示生成；③ 然后才开始今天的开发。
 
 > 再也不用被催「周报发一下」，也不用周末加班补周报 —— 从 devlog 自动汇总。
 
@@ -220,4 +220,4 @@ my-project/
 
 [MIT](LICENSE) —— 随便用，随便改，随便发给别人。
 
-<div align="center"><sub>用 ❤️ 和 Claude Code 构建 · 如果对你有用，点个 ⭐ 支持一下</sub></div>
+<div align="center"><sub>用 ❤️ 打造 · 如果对你有用，点个 ⭐ 支持一下</sub></div>
